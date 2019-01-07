@@ -35,7 +35,7 @@ export class AuthenService {
     }
   }
 
-  getLoginUser(): any {
+  getLoginUser(): LoggedinUser {
     let user: LoggedinUser;
     if (this.isUserAuthenticated) {
       var userData = JSON.parse(localStorage.getItem(SystemConstants.CURRENT_USER));
